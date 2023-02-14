@@ -5,6 +5,7 @@ set -u # Report the usage of uninitialized variables
 #--- Initialize context
 echo "$(date -u "+%Y-%m-%d %H:%M:%S") => Begin pre-start"
 
+echo `stat -c %Z /proc/ `> /var/vcap/data/fail-on-raw-reboot/pre-start-timestamp
 
 echo "$(date -u "+%Y-%m-%d %H:%M:%S") => End pre-start"
 exit 0
