@@ -2,6 +2,6 @@
 blobstore:
   provider: s3 
   options:
-    bucket_name: orange-node-hardening-release-boshrelease
+    bucket_name: orange-node-hardening-boshrelease
 final_name: node-hardening
 
