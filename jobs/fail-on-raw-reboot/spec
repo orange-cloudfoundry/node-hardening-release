@@ -1,5 +1,5 @@
 ---
-name: scripting-list
+name: fail-on-raw-reboot
 packages: []
 templates:
   post-deploy.erb: bin/post-deploy

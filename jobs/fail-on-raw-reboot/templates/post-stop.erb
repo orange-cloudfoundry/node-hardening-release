@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e # Exit immediately if a simple command exits with a non-zero status
+set -u # Report the usage of uninitialized variables
+
+#--- Initialize context
+echo "$(date -u "+%Y-%m-%d %H:%M:%S") => Begin post-stop"
+
+
+echo "$(date -u "+%Y-%m-%d %H:%M:%S") => End post-stop"
+exit 0
