@@ -5,7 +5,16 @@ set -u # Report the usage of uninitialized variables
 
 echo "$(date -u "+%Y-%m-%d %H:%M:%S") => Begin monit"
 
-echo `stat -c %Z /proc/ `> /var/vcap/data/fail-on-raw-reboot/monit-start-timestamp
+prestart=$(cat /var/vcap/data/fail-on-raw-reboot/pre-start-timestamp)
+boottime=$(date -d "$(uptime -s)" +%s)
+
+
+if [ $boottime -gt $prestart ]; then
+  echo "$(date -u "+%Y-%m-%d %H:%M:%S") => failure. prestart not run since boot time"
+  exit 1
+fi 
+
+sleep infinity
 
 
 echo "$(date -u "+%Y-%m-%d %H:%M:%S") => End monit"

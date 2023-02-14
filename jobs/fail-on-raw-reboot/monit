@@ -1,6 +1,5 @@
 check process fail-on-raw-reboot
-  with pidfile /var/vcap/sys/run/fail-on-raw-reboot/pid
-  start program "/var/vcap/jobs/fail-on-raw-reboot/bin/ctl start"
-  stop program "/var/vcap/jobs/fail-on-raw-reboot/bin/ctl stop"
+  with pidfile /var/vcap/sys/run/bpm/fail-on-raw-reboot/fail-on-raw-reboot.pid
+  start program "/var/vcap/jobs/bpm/bin/bpm start fail-on-raw-reboot"
+  stop program "/var/vcap/jobs/bpm/bin/bpm stop fail-on-raw-reboot"
   group vcap
-

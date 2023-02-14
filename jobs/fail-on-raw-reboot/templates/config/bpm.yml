@@ -1,11 +1,10 @@
 ---
 processes:
-- name: check-node
+- name: fail-on-raw-reboot
   executable: /var/vcap/jobs/fail-on-raw-reboot/bin/check-node.sh
   args: []
   ephemeral_disk: true
   persistent_disk: false
-  env: []
   limits:
     memory: 1G
     open_files: 1000
