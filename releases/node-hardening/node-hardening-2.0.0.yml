@@ -1,0 +1,14 @@
+name: node-hardening
+version: 2.0.0
+commit_hash: 061585c
+uncommitted_changes: false
+jobs:
+- name: fail-on-raw-reboot
+  version: fee90711fd8d72772273535775f98389641b0b6ee6e1127ae12494adc2d7c45b
+  fingerprint: fee90711fd8d72772273535775f98389641b0b6ee6e1127ae12494adc2d7c45b
+  sha1: sha256:fac0a31afd2daa6459cc8d5d6cfea9d8aeadb5724cc9ddd71b543771bce5411e
+  packages: []
+license:
+  version: c52a2c414b935147f0ccbe8d798edbbcd65c5e9084079f727b3fb5727a44e50d
+  fingerprint: c52a2c414b935147f0ccbe8d798edbbcd65c5e9084079f727b3fb5727a44e50d
+  sha1: sha256:7edf041a961061c2df998bcfc7adf11c5a6dc39f2df0d3da1de45fc52b555a88
