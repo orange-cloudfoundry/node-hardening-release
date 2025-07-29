@@ -2,7 +2,7 @@
 blobstore:
   provider: s3 
   options:
-    bucket_name: s3selfcare-node-hardening-boshrelease
+    bucket_name: orange-node-hardening-boshrelease
     region: eu
     host: storage.googleapis.com
 final_name: node-hardening
